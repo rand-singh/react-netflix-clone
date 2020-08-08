@@ -1,5 +1,6 @@
 import React from "react";
 import Row from "./components/Row";
+import Banner from "./components/Banner";
 import requests from "./utils/requests";
 
 import "./styles/App.scss";
@@ -7,7 +8,9 @@ import "./styles/App.scss";
 function App() {
   return (
     <div>
-      <h1>React Netflix Clone</h1>
+      {/* navbar */}
+      {/* banner */}
+      <Banner />
       <Row
         title="NETFLIX ORIGINALS"
         fetchUrl={requests.fetchNetflixOriginals}

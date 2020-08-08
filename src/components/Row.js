@@ -14,7 +14,6 @@ function Row({ title, fetchUrl, isLargeRow }) {
     async function fetchData() {
       const req = await axios.get(fetchUrl);
       setMovies(req.data.results);
-      console.table(req.data.results);
       return req;
     }
     fetchData();
