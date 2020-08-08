@@ -23,7 +23,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
   }, [fetchUrl]);
 
   const opts = {
-    height: "390",
+    height: "700px",
     width: "100%",
     playerVars: {
       autoplay: 1,
@@ -52,7 +52,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
           <img
             key={movie.id}
             onClick={() => handleClick(movie)}
-            className={`row__poster ${isLargeRow ? "row__poster-large" : ""}`}
+            className={`row__poster   ${isLargeRow ? "row__poster-large" : ""}`}
             src={`${base_url}${
               isLargeRow ? movie.poster_path : movie.backdrop_path
             }`}
@@ -60,7 +60,9 @@ function Row({ title, fetchUrl, isLargeRow }) {
           />
         ))}
       </div>
-      {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
+      {trailerUrl && (
+        <YouTube videoId={trailerUrl} opts={opts} className="row__video" />
+      )}
     </div>
   );
 }
