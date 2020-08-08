@@ -13,12 +13,13 @@
   &__poster {
     object-fit: contain;
     width: 100%;
-    max-height: 15rem;
+    min-width: 10rem;
     margin-right: 10px;
     transition: transform 450ms;
     background-image: url("../../images/movie-icon.png");
-    background-repeat: no-repeat, repeat;
+    background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
 
     &:hover {
       cursor: pointer;
