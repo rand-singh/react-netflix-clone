@@ -1,0 +1,16 @@
+// *** Push auto ***
+// Center a block element
+@mixin push--auto {
+    margin: { 
+        left: auto;
+        right: auto;
+    }
+}
+
+// *** Pseudo ***
+// When using ::before and ::after you'll always need these three
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+    content: $content;
+    display: $display;
+    position: $pos;
+}
