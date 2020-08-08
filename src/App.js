@@ -1,4 +1,5 @@
 import React from "react";
+import Nav from "./components/Nav";
 import Row from "./components/Row";
 import Banner from "./components/Banner";
 import requests from "./utils/requests";
@@ -8,8 +9,7 @@ import "./styles/App.scss";
 function App() {
   return (
     <div className="app">
-      {/* navbar */}
-      {/* banner */}
+      <Nav />
       <Banner />
       <Row
         title="NETFLIX ORIGINALS"
