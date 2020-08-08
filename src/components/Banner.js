@@ -44,6 +44,7 @@ function Banner() {
           {truncate(movie?.overview, 150)}
         </h2>
       </div>
+      <div className="banner--fadeBottom"></div>
     </header>
   );
 }

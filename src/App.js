@@ -7,7 +7,7 @@ import "./styles/App.scss";
 
 function App() {
   return (
-    <div>
+    <div className="app">
       {/* navbar */}
       {/* banner */}
       <Banner />
