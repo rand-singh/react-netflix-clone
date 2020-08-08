@@ -5,19 +5,21 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 5px 20px;
+  transition-timing-function: ease-in;
+  transition: 0.3s all;
+
+  &--black {
+    background-color: #111;
+  }
 
   &__logo {
     max-width: 120px;
     object-fit: contain;
-    position: fixed;
-    left: 15px;
   }
 
   &__avatar {
-    max-width: 50px;
+    max-width: 40px;
     object-fit: contain;
-    position: fixed;
-    right: 20px;
   }
 }
